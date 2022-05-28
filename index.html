@@ -133,10 +133,10 @@
                                         <ul>
                                             <button class="button is-checked" data-sort-by="original-order">original order</button>
                                             <button class="button" data-sort-by="name">Nombre</button>
-                                            <button class="button" data-sort-by="type">Tipo</button>
+                                            <button class="button" data-sort-by="weight">Matrícula</button>
                                             <button class="button" data-sort-by="price">Precio</button>
-                                            <button class="button" data-sort-by="weight">weight</button>
-                                            <button class="button" data-sort-by="category">categoría</button>
+                                            <button class="button" data-sort-by="type">Tipo</button>
+                                            <button class="button" data-sort-by="category">Categoría</button>
                                         </ul>
                                     </div>
                                     <div class="portfolio_content">
@@ -289,11 +289,12 @@
 
         <script>
             const card = document.getElementById("portfolio")
-            const titulos = ["Transistor", "Capacitor", "uC", "CI", "Resistencia", "Capacitor", "CI","Transistor", "Capacitor", "uC", "CI", "Resistencia", "Capacitor", "CI","Transistor", "Capacitor", "uC", "CI", "Resistencia", "Capacitor", "CI","Transistor", "Capacitor", "uC", "CI", "Resistencia", "Capacitor", "CI","Transistor", "Capacitor", "uC", "CI", "Resistencia", "Capacitor", "CI","Transistor", "Capacitor", "uC", "CI", "Resistencia", "Capacitor", "CI","Transistor", "Capacitor", "uC", "CI", "Resistencia", "Capacitor", "CI","Transistor", "Capacitor", "uC", "CI", "Resistencia", "Capacitor", "CI","Transistor", "Capacitor", "uC", "CI", "Resistencia", "Capacitor", "CI"]
-            
+            const Nombres = ["Transistor", "Capacitor", "uC", "CI", "Resistencia", "Capacitor", "CI","Transistor", "Capacitor", "uC", "CI", "Resistencia", "Capacitor", "CI","Transistor", "Capacitor", "uC", "CI", "Resistencia", "Capacitor", "CI","Transistor", "Capacitor", "uC", "CI", "Resistencia", "Capacitor", "CI","Transistor", "Capacitor", "uC", "CI", "Resistencia", "Capacitor", "CI","Transistor", "Capacitor", "uC", "CI", "Resistencia", "Capacitor", "CI","Transistor", "Capacitor", "uC", "CI", "Resistencia", "Capacitor", "CI","Transistor", "Capacitor", "uC", "CI", "Resistencia", "Capacitor", "CI","Transistor", "Capacitor", "uC", "CI", "Resistencia", "Capacitor", "CI"]
+            const precios = ["14.50", "3.00", "50.00", "20.00", "3.00", "6.00", "11.00","6.00", "3.00", "70.00", "30.00", "3.00", "50.00", "20.00", "3.00", "6.00", "11.00","6.00", "3.00", "70.00", "30.00", "3.00", "50.00", "20.00", "3.00", "6.00", "11.00","6.00", "3.00", "70.00", "30.00", "3.00", "50.00", "20.00", "3.00", "6.00", "11.00","6.00", "3.00", "70.00", "30.00", "20.00", "3.00", "6.00", "11.00","6.00", "3.00", "70.00", "30.00", "3.00", "50.00", "20.00", "3.00", "6.00", "11.00","6.00", "3.00", "70.00", "30.00", "3.00", "50.00", "20.00", "3.00", "6.00", "11.00","6.00", "3.00", "70.00", "30.00", "3.00", "50.00", "20.00", "3.00", "6.00", "11.00","6.00", "3.00", "70.00", "30.00"]
+            const Matriculas = ["2N222", "20nF", "MSP430", "LM324", "2K", "470uF", "ATMEL", "BC547", "10uF", "MSP430", "LM324", "4.7K", "47uF", "ATMEL", "BC547", "200nF", "MSP430", "LM324", "10K", "470uF", "ATMEL", "BC547", "200nF", "MSP430", "LM324", "1M", "470uF", "ATMEL", "BC547", "200nF", "MSP430", "LM324", "200", "470uF", "ATMEL", "BC547", "200nF", "MSP430", "LM324", "1K", "470uF", "ATMEL", "BC547", "200nF", "MSP430", "LM324", "12K", "470uF", "ATMEL", "BC547", "200nF", "MSP430", "LM324", "15k", "470uF", "ATMEL", "BC547", "200nF", "MSP430", "LM324", "470", "470uF", "ATMEL", "BC547", "200nF", "MSP430", "LM324", "2M", "470uF", "ATMEL", "BC547", "200nF", "MSP430", "LM324", "21k", "470uF", "ATMEL", "BC547"];
     
-            titulos.forEach((titulo, i) =>{
-                card.innerHTML += ('<div class="element-item '+ titulo +' " data-category="'+titulo+'"><div class="imgBox"><img src="img/portfolio/'+ titulo +'.jpg".jpg" width="140" height="140" alt="mouse corsair" class="mouse"></div><div class="contentBox"><h3 class="name">'+titulo+i+'</h3><p class="type">H'+i+'</p><p class="price">$'+i+'</p><p class="weight">'+i+'</p></div>')})
+            Nombres.forEach((Nombre, i) =>{
+                card.innerHTML += ('<div class="element-item '+ Nombre +' " data-category="'+Nombre+'"><div class="imgBox"><img src="img/portfolio/'+ Nombre +'.jpg".jpg" width="140" height="140" alt="mouse corsair" class="mouse"></div><div class="contentBox"><h3 class="name">'+Nombre+i+'</h3><p class="type">H'+i+'</p><p class="price">$'+precios[i]+'</p><p class="weight">'+Matriculas[i]+'</p></div>')})
         </script>
 
     </body> 
