@@ -410,8 +410,8 @@ section {
 .element-item.Transistor        { background: #F00; background: hsl(   0, 100%, 50%); }
 .element-item.Resistencia  		{ background: #F80; background: hsl(  36, 100%, 50%); }
 .element-item.Capacitor      	{ background: #FF0; background: hsl(  72, 100%, 50%); }
-.element-item.uC        		{ background: #0F0; background: hsl( 108, 100%, 50%); }
-.element-item.CI     			{ background: #0F8; background: hsl( 144, 100%, 50%); }
+.element-item.uC        		{ background: rgb(0, 217, 255); background: rgb(0, 225, 255); }
+.element-item.CI     			{ background: rgb(212, 0, 255); background: rgb(204, 0, 255); }
 
 
 /* ====			==== */
