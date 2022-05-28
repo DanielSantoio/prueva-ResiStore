@@ -117,7 +117,7 @@
                                 </div>
                                 <!-- End page header-->
                                 <div class="portfoloi_content_area" >
-                                    <div class="portfolio_menu" id="filters">
+                                    <div id="filters" class="portfolio_menu">
                                         <ul>
                                             <li class="active_prot_menu"><a href="#porfolio_menu" data-filter="*">Todos</a></li>
                                             <li><a href="#porfolio_menu" data-filter=".Transistor">Transistores</a></li>
@@ -125,10 +125,22 @@
                                             <li><a href="#porfolio_menu" data-filter=".uC">Microcontroladores</a></li>
                                             <li><a href="#porfolio_menu" data-filter=".Capacitor">Capacitores</a></li>
                                             <li><a href="#porfolio_menu" data-filter=".Resistencia">Resistencias</a></li>
+                                            <li><a href="#porfolio_menu" data-filter=".Resistencia, .Capacitor">Res y Cap</a></li>
+                                            <li><a href="#porfolio_menu" data-filter=":not(.Transistor)">no Transistores</a></li>
+                                        </ul>
+                                    </div>
+                                    <div id="sorts" class="button-group">
+                                        <ul>
+                                            <button class="button is-checked" data-sort-by="original-order">original order</button>
+                                            <button class="button" data-sort-by="name">Nombre</button>
+                                            <button class="button" data-sort-by="type">Tipo</button>
+                                            <button class="button" data-sort-by="price">Precio</button>
+                                            <button class="button" data-sort-by="weight">weight</button>
+                                            <button class="button" data-sort-by="category">categoría</button>
                                         </ul>
                                     </div>
                                     <div class="portfolio_content">
-                                        <div class="row"  id="portfolio"></div>
+                                        <div class="grid" id="portfolio"></div>
                                     </div>
                                 </div>
                             
@@ -156,13 +168,13 @@
                 <!-- End page header-->
                 <div class="container">
                     <div id="owl-partners" class="owl-carousel">
-                        <img src="img/partners/1.png" alt="img">
-                        <img src="img/partners/2.png" alt="img">
-                        <img src="img/partners/3.png" alt="img">
-                        <img src="img/partners/4.png" alt="img">
-                        <img src="img/partners/5.png" alt="img">
-                        <img src="img/partners/6.png" alt="img">
-                        <img src="img/partners/7.png" alt="img">
+                        <img src="img/logo.png" alt="img">
+                        <img src="img/logo.png" alt="img">
+                        <img src="img/logo.png" alt="img">
+                        <img src="img/logo.png" alt="img">
+                        <img src="img/logo.png" alt="img">
+                        <img src="img/logo.png" alt="img">
+                        <img src="img/logo.png" alt="img">
                     </div>
                 </div>
             </section>
@@ -276,16 +288,13 @@
 		<script src="js/theme.js"></script>
 
         <script>
-            const titulos = ["Transistor", "Capacitor", "uC", "CI", "Resistencia", "Capacitor", "CI","Transistor", "Capacitor", "uC", "CI", "Resistencia", "Capacitor", "CI","Transistor", "Capacitor", "uC", "CI", "Resistencia", "Capacitor", "CI","Transistor", "Capacitor", "uC", "CI", "Resistencia", "Capacitor", "CI","Transistor", "Capacitor", "uC", "CI", "Resistencia", "Capacitor", "CI","Transistor", "Capacitor", "uC", "CI", "Resistencia", "Capacitor", "CI","Transistor", "Capacitor", "uC", "CI", "Resistencia", "Capacitor", "CI","Transistor", "Capacitor", "uC", "CI", "Resistencia", "Capacitor", "CI","Transistor", "Capacitor", "uC", "CI", "Resistencia", "Capacitor", "CI"]
             const card = document.getElementById("portfolio")
+            const titulos = ["Transistor", "Capacitor", "uC", "CI", "Resistencia", "Capacitor", "CI","Transistor", "Capacitor", "uC", "CI", "Resistencia", "Capacitor", "CI","Transistor", "Capacitor", "uC", "CI", "Resistencia", "Capacitor", "CI","Transistor", "Capacitor", "uC", "CI", "Resistencia", "Capacitor", "CI","Transistor", "Capacitor", "uC", "CI", "Resistencia", "Capacitor", "CI","Transistor", "Capacitor", "uC", "CI", "Resistencia", "Capacitor", "CI","Transistor", "Capacitor", "uC", "CI", "Resistencia", "Capacitor", "CI","Transistor", "Capacitor", "uC", "CI", "Resistencia", "Capacitor", "CI","Transistor", "Capacitor", "uC", "CI", "Resistencia", "Capacitor", "CI"]
+            
     
             titulos.forEach((titulo, i) =>{
-                card.innerHTML += ('<div class="col-xs-12 col-sm-3 ' + titulo + '"><div class="portfolio_single_content"><img src="img/portfolio/'+ titulo +'.jpg" alt="title"/><div><a href="#">Componente</a><span>Descripción</span></div></div></div>')
-            })
-    
+                card.innerHTML += ('<div class="element-item '+ titulo +' " data-category="'+titulo+'"><div class="imgBox"><img src="img/portfolio/'+ titulo +'.jpg".jpg" width="140" height="140" alt="mouse corsair" class="mouse"></div><div class="contentBox"><h3 class="name">'+titulo+i+'</h3><p class="type">H'+i+'</p><p class="price">$'+i+'</p><p class="weight">'+i+'</p></div>')})
         </script>
 
     </body> 
-        
-            
 </html>
