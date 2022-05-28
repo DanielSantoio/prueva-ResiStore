@@ -352,7 +352,7 @@ section {
 	position: absolute;
 	display: flex;
 	left: 30px;
-	top: 50px;
+	top: 40px;
 	justify-content: center;
 	align-items: center;
 	z-index: 1;
@@ -361,25 +361,25 @@ section {
 .element-item .name {
 	position:absolute;
 	left: 0px;
-	top: -8px;
+	bottom: 47px;
 	width: 190px;
 	text-align: center;
 	text-transform: none;
 	letter-spacing: 2;
 	font-style: italic;
-	font-weight: 300;
-	font-size: 1.9em;
-	color: rgb(141, 141, 141);
+	font-weight: 400;
+	font-size: 1em;
+	color: white;
 }
 
 .element-item .type {
 	position: absolute;
 	left: 20px;
-	bottom: -12px;
-	font-size: 42px;
+	bottom: 0px;
+	font-size: 30px;
 	font-weight: 800;
 	font-style: oblique;
-	color: rgb(141, 141, 141);
+	color: white;
 }
 
 .element-item .price {
@@ -392,7 +392,7 @@ section {
 	text-align: center;
 	display: inline-block;
 	font-size: 22px;
-	font-weight: 200;
+	font-weight: 400;
 	color: #fff;
 	border-radius: 7px;
 	margin-top: -13px;
@@ -401,15 +401,22 @@ section {
 }
 
 .element-item .weight {
-	position: absolute;
-	left: 10px;
-	top: 76px;
-	font-size: 12px;
+	position:absolute;
+	left: 0px;
+	top: 2px;
+	width: 190px;
+	text-align: center;
+	text-transform: none;
+	letter-spacing: 2;
+	font-style: italic;
+	font-weight: 500;
+	font-size: 1.9em;
+	color: white;
 }
 
 .element-item.Transistor        { background: #F00; background: hsl(   0, 100%, 50%); }
 .element-item.Resistencia  		{ background: #F80; background: hsl(  36, 100%, 50%); }
-.element-item.Capacitor      	{ background: #FF0; background: hsl(  72, 100%, 50%); }
+.element-item.Capacitor      	{ background: rgb(102, 255, 0); background: rgb(123, 255, 0); }
 .element-item.uC        		{ background: rgb(0, 217, 255); background: rgb(0, 225, 255); }
 .element-item.CI     			{ background: rgb(212, 0, 255); background: rgb(204, 0, 255); }
 
