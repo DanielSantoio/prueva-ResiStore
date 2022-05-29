@@ -152,7 +152,7 @@ $(window).load(function() {
     
     var $container = $('#portfolio');
     $container.isotope({
-        itemSelector: '.element-item ',
+        itemSelector: '.card ',
         layoutMode: 'fitRows',
         getSortData: {
             name: '.name',
