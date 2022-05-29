@@ -334,91 +334,125 @@ section {
 	content: '';
 }
 
-/* ---- .element-item ---- */
 
-.element-item {
+
+/* card */
+.card {
 	position:static;
 	align-items: flex-start;
 	justify-content: start;
 	float: left;
-	width: 200px;
-	height: 260px;
-	margin: 20px 30px;
+	width: 220px;
+	height: auto;
+	margin: 80px 30px 10px 30px;
 	border-radius: 25px;
-	box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+	box-shadow: -11px 11px 1px rgba(13, 69, 143, 0.3);
 }
 
-.imgBox {
-	position: absolute;
-	display: flex;
-	left: 30px;
-	top: 40px;
-	justify-content: center;
-	align-items: center;
-	z-index: 1;
+.card-head {
+	position: relative;
+	height: 200px;
+	background-color: rgb(90, 209, 66);
+	border-radius: 25px 25px 0 0;
+	text-shadow: -1px 1px 1px rgba(8, 62, 133, 0.568);
 }
 
-.element-item .name {
-	position:absolute;
-	left: 0px;
-	bottom: 47px;
-	width: 190px;
-	text-align: center;
-	text-transform: none;
-	letter-spacing: 2;
-	font-style: italic;
-	font-weight: 400;
-	font-size: 1em;
-	color: white;
-}
-
-.element-item .type {
+.product-img {
 	position: absolute;
 	left: 20px;
-	bottom: 0px;
-	font-size: 30px;
-	font-weight: 800;
-	font-style: oblique;
+	top: -70px;
+}
+
+.product-detail {
+	position: absolute;
+	text-justify: distribute;
+	text-align: center;
+	top: 60px;
+	padding: 0px 5px 0px 5px;
+	font-size: 13px;
 	color: white;
 }
 
-.element-item .price {
+.name {
+	font-size: 18px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.card-body {
+	height: 120px;
+	color: #000;
+	background: rgb(0, 128, 17);
+	border-radius: 0 0 25px 25px;
+	text-shadow: -1px 1px 1px rgba(135, 182, 243, 0.568);
+}
+
+.product-title {
+	position: relative;
+	padding: 10px 0px 0px 20px;
+	display: block;
+	font-size: 15px;
+	font-weight: 800;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.badge {
+	position: relative;
+	font-size: 10px;
+	font-weight: 300;
+	color: #fff;
+	background: #ff0000;
+	padding: 3px 6px;
+	margin-left: 5px;
+	border-radius: 4px;
+}
+
+.type {
+	display: block;
+	padding: 6px 0px 0px 20px;
+	font-size: 10px;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+.product-rating {
+	padding: 6px 0px 0px 15px;
+	font-size: 11px;
+	text-indent: 5px;
+	color: yellow;
+}
+
+.product-rating i.grey {
+	color: #ffffff;
+}
+
+.product-price {
 	position: absolute;
-	left: 130px;
-	bottom: 0px;
-	width: 90px;
 	background: #11e95b;
-	padding: 3px 0px;
+	padding: 7px 10px;
 	text-align: center;
-	display: inline-block;
-	font-size: 22px;
-	font-weight: 400;
+	width: 100px;
+	font-size: 15px;
+	font-weight: 200;
 	color: #fff;
 	border-radius: 7px;
-	margin-top: -13px;
-	margin-left: -5px;
+	margin: 0px 0px 0 40px;
 	box-shadow: -10px 20px 15px -10px rgba(17, 233, 91, 0.3);
 }
 
-.element-item .weight {
-	position:absolute;
-	left: 0px;
-	top: 2px;
-	width: 190px;
-	text-align: center;
-	text-transform: none;
-	letter-spacing: 2;
-	font-style: italic;
-	font-weight: 500;
-	font-size: 1.9em;
-	color: white;
+.product-price b {
+	margin-left: 5px;
 }
 
-.element-item.Transistor        { background: #F00; background: hsl(   0, 100%, 50%); }
-.element-item.Resistencia  		{ background: #F80; background: hsl(  36, 100%, 50%); }
-.element-item.Capacitor      	{ background: rgb(102, 255, 0); background: rgb(123, 255, 0); }
-.element-item.uC        		{ background: rgb(0, 217, 255); background: rgb(0, 225, 255); }
-.element-item.CI     			{ background: rgb(212, 0, 255); background: rgb(204, 0, 255); }
+
+
+.product-size h4 {
+	font-size: 11px;
+	padding: 0 21px;
+	margin-top: 15px;
+	padding-bottom: 10px;
+}
 
 
 /* ====			==== */
