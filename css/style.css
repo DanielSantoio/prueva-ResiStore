@@ -260,7 +260,6 @@ section {
 /* ====			==== */
 .portfolio_content{
     overflow: hidden;
-	justify-items: center;
 }
 
 
@@ -443,7 +442,7 @@ section {
 
 .product-price b {
 	margin-left: 5px;
-	font-weight: 400;
+	font-weight: 200;
 }
 
 
