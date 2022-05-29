@@ -157,7 +157,7 @@ $(window).load(function() {
         getSortData: {
             name: '.name',
             type: '.type',
-            price: '.price',
+            price: '.price parseInt',
             category: '[data-category]',
             weight: function( itemElem ) {
                 var weight = $( itemElem ).find('.weight').text();
